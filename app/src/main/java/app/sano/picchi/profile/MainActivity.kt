@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         //画像を見えなくする
         profileImageView.isVisible = false
         commentTextView.isVisible = false
