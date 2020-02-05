@@ -13,14 +13,32 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        //画像を見えなくする
+//        commentTextView.isVisible = false
 
-        //画像を見えなくする
-        profileImageView.isVisible = false
-        commentTextView.isVisible = false
+        nameButton.setOnClickListener {
+            profileImageView.setImageResource(R.drawable.randy_image)
+            profileTextView.text = "名前"
+            commentTextView.text = "Androidメンターのランディだよ！"
 
-        button1.setOnClickListener {
-            profileImageView.isVisible = true
-            commentTextView.isVisible = true
+        }
+
+        foodButton.setOnClickListener {
+            profileImageView.setImageResource(R.drawable.donut_image)
+            profileTextView.text = "好きな食べ物"
+            commentTextView.text = "キャンディーやドーナツが一番好きかな"
+        }
+
+        sportButton.setOnClickListener {
+            profileImageView.setImageResource(R.drawable.baseball_image)
+            profileTextView.text = "好きなスポーツ"
+            commentTextView.text = "野球が好きでスタジアムによく通ってるよ"
+        }
+
+        hobbyButton.setOnClickListener {
+            profileImageView.setImageResource(R.drawable.gadget_image)
+            profileTextView.text = "趣味"
+            commentTextView.text = "ガジェットを集めて動かすこと"
 
         }
     }
